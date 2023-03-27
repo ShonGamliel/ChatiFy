@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+@font-face {
+  font-family: "Segoe UI Historic";
+  src: local("Arial");
+  unicode-range: U+530-5f4, U+10a0-10ff;
+}
+@font-face {
+  font-family: "Segoe UI Historic";
+  font-weight: 700;
+  src: local("Arial Bold"), local("Arial");
+  unicode-range: U+530-5f4, U+10a0-10ff;
+}
+
+* {
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #050505;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  height: 100%;
+}
+
+.fullscreen {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.fullscreen-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.94);
+}
+
+.fullscreen-center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding:16px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:active {
+  transform: scale(95%);
+}
+
+.divider {
+  border-top: 1px solid #ced0d4;
+  width:100%;
+}
